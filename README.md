@@ -1,7 +1,7 @@
 # himawari-rx_auto_scripts
-Auto scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/himawari-rx).
+Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/himawari-rx).
 
-**himawari-rx__auto.bat** is the main script for start TSDuck, and start **himawari-rx__decode.bat** automatic when TSDuck is terminated.
+**himawari-rx__auto.bat** is the main script for start TSDuck to record a dump file, then rename the dump file and start **himawari-rx__decode.bat** automatic when TSDuck is terminated, and start TSDuck again at the same time to record next round.
 
 **himawari-rx__decode.bat** is the script for start himawari-rx to receive files, and make pictures automatic. It will start automatic by the **himawari-rx__auto.bat** script.
 
