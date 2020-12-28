@@ -7,6 +7,16 @@ title himawari-rx_decode
 
 
 
+echo '-----------------------------------------------------------'
+echo '                  himawari-rx__decode.bat                  '
+echo 'This is the decode script (start by main script automatic).'
+echo '                                                           '
+echo '   @tcjj3    github.com/tcjj3/himawari-rx_auto_scripts     '
+echo '-----------------------------------------------------------'
+
+
+
+
 
 python himawari-rx.py --config himawari-rx.ini --file "..\scripts\udp_fordecode.dump" -v
 
