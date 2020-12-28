@@ -9,4 +9,4 @@ Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/h
 **Notice:** **all TSDuck processes (tsp.exe)** will be **terminated** when it's time to **terminate** **tsp.exe** by this script!
 
 
-Usage: Be sure the operating system is Windows, TSDuck is installed, your hardwares is working and himawari-rx can work on the same computer, then just put these scripts to **himawari-rx**'s directory, and start **himawari-rx__auto.bat** and **time_monitor_to_terminate_TSDuck.bat**, it will start to receive and make the pictures automatic.
+Usage: Be sure the operating system is Windows, TSDuck is installed, your hardwares is working and himawari-rx can work on the same computer, then just put these scripts to **himawari-rx**'s directory, and start **himawari-rx__auto.bat** and **time_monitor_to_terminate_TSDuck.bat** at the same time, it will start to receive and make pictures automatic.
