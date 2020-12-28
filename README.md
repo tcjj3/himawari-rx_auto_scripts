@@ -1,4 +1,9 @@
 # himawari-rx_auto_scripts
+
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/tcjj3/himawari-rx_auto_scripts.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/tcjj3/himawari-rx_auto_scripts.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/commits/main)
+[![GitHub commits since latest release](https://img.shields.io/github/commits-since/tcjj3/himawari-rx_auto_scripts/latest.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/commits/main)
+[![GitHub Release Date](https://img.shields.io/github/release-date/tcjj3/himawari-rx_auto_scripts.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/releases/latest)
 [![GitHub release](https://img.shields.io/github/release/tcjj3/himawari-rx_auto_scripts.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/releases/latest)
 [![Github all releases](https://img.shields.io/github/downloads/tcjj3/himawari-rx_auto_scripts/total.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/releases/latest)
 [![GitHub license](https://img.shields.io/github/license/tcjj3/himawari-rx_auto_scripts.svg)](https://github.com/tcjj3/himawari-rx_auto_scripts/blob/master/LICENSE)
