@@ -1,6 +1,19 @@
 @echo off
 title Time Monitor To Terminate TSDuck
 
+
+
+
+echo '-----------------------------------------------------------'
+echo '          time_monitor_to_terminate_TSDuck.bat             '
+echo '   This is the script to terminate all tsp.exe timely.     '
+echo '                                                           '
+echo '   @tcjj3    github.com/tcjj3/himawari-rx_auto_scripts     '
+echo '-----------------------------------------------------------'
+
+
+
+
 echo Time Monitor Started...
 
 
