@@ -57,9 +57,9 @@ REM if not exist %%i\%%j\FC.png (
 .\tools\false-colour.py %%i\%%j
 REM )
 
-if exist %%i\%%j\FC.png (
+REM if exist %%i\%%j\FC.png (
 if not exist %%i\%%j.png (move %%i\%%j\FC.png %%i\%%j.png >nul)
-)
+REM )
 
 for /f "delims=" %%k in ('dir /b %%i\%%j\IMG_DK01B04_*.png') do (
 if not exist %%j_%%k (move %%i\%%j\%%k %%i\IMG_DK01B04\%%j_%%k >nul)
@@ -107,8 +107,13 @@ for /f "delims=" %%k in ('dir /b %%i\%%j\IMG_DK01VIS_*.png') do (
 if not exist %%j_%%k (move %%i\%%j\%%k %%i\IMG_DK01VIS\%%j_%%k >nul)
 )
 
+REM if not exist himawari-rx__rmdir.bat (
 copy /y NUL %%i\%%j\decoded.txt >NUL
+REM )
 
+)
+if exist himawari-rx__rmdir.bat (
+start himawari-rx__rmdir.bat %%i\%%j
 )
 )
 
