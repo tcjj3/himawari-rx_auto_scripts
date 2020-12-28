@@ -3,6 +3,15 @@ title himawari-rx_auto
 
 
 
+echo '-----------------------------------------------------------'
+echo '                  himawari-rx__auto.bat                    '
+echo '                  This is the main script.                 '
+echo '                                                           '
+echo '   @tcjj3    github.com/tcjj3/himawari-rx_auto_scripts     '
+echo '-----------------------------------------------------------'
+
+
+
 :start
 
 
