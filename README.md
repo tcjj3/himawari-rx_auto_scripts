@@ -24,5 +24,5 @@ Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/h
 
 Usage: <br>
 (1) Be sure the operating system is **``Windows``**, **``TSDuck``** is installed, your hardwares is working and **``himawari-rx``** can work at the same computer. <br>
-(2) Then just put these scripts to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
-(3) Finally start **``himawari-rx__auto.bat``** and **``time_monitor_to_terminate_TSDuck.bat``** at the same time, they will start to receive and make pictures automatic.
+(2) Then put these scripts to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
+(3) Finally just start **``start.vbs``**, it will automatic start ``himawari-rx__auto.bat`` and ``time_monitor_to_terminate_TSDuck.bat`` at the same time, they will start to receive and make pictures automatic.
