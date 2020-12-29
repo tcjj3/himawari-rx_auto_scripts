@@ -21,8 +21,7 @@ Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/h
 **``time_monitor_to_terminate_TSDuck.bat``** is the script to terminate **all ``TSDuck processes (tsp.exe)``** automatic **``every 10 minutes``** (when **``the last digit``** of **``minute``** is **``5``**), then will make ``himawari-rx__decode.bat`` started automatic by ``himawari-rx__auto.bat``. <br>
 **Notice:** **all ``TSDuck processes (tsp.exe)``** will be **terminated** when it's time to **terminate** **``tsp.exe``** by this script!
 
-**``start.vbs``** and **``start.bat``** are the one-click script of these scripts, you can using **``start.bat``** instead of ``start.vbs`` to get start if vbscript on your system is not allowed.
-
+**``start.vbs``** and **``start.bat``** are the one-click script of these scripts, you can using **``start.bat``** instead of ``start.vbs`` to get start if ``vbscript`` on your system is **not allowed**.
 
 Usage: <br>
 (1) Be sure the operating system is **``Windows``**, **``TSDuck``** is installed, your hardwares is working and **``himawari-rx``** can work at the same computer. <br>
