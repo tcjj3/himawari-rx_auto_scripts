@@ -5,6 +5,8 @@ title himawari-rx_auto_scripts_starter
 
 
 
+
+
 echo '-----------------------------------------------------------'
 echo '                        start.bat                          '
 echo '                This is the starter script.                '
@@ -16,9 +18,17 @@ echo '-----------------------------------------------------------'
 
 
 
+
+
 start himawari-rx__auto.bat
 
 start time_monitor_to_terminate_TSDuck.bat
+
+
+
+
+
+exit
 
 
 
