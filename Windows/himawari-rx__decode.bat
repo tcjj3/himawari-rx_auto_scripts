@@ -50,6 +50,8 @@ set t=%%j
 set tt=!t:~0,4!
 
 if not !tt!==IMG_ (
+if not !tt!==SATA (
+
 if not exist %%i\%%j\decoded.txt (
 
 REM if not exist %%i\%%j\FC.png (
@@ -107,13 +109,22 @@ for /f "delims=" %%k in ('dir /b %%i\%%j\IMG_DK01VIS_*.png') do (
 if not exist %%j_%%k (move %%i\%%j\%%k %%i\IMG_DK01VIS\%%j_%%k >nul)
 )
 
-REM if not exist himawari-rx__rmdir.bat (
+if exist himawari-rx__sataid.bat (
+start himawari-rx__sataid.bat %%i %%j
+) else (
+
+if not exist himawari-rx__rmdir.bat (
 copy /y NUL %%i\%%j\decoded.txt >NUL
-REM )
+)
+)
 
 )
+if not exist himawari-rx__sataid.bat (
 if exist himawari-rx__rmdir.bat (
 start himawari-rx__rmdir.bat %%i\%%j
+)
+)
+
 )
 )
 
