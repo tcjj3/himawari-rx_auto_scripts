@@ -14,6 +14,10 @@ Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/h
 
 **``himawari-rx__decode.bat``** is the script for start ``himawari-rx`` to receive files, and make pictures automatic. It will start automatic by the ``himawari-rx__auto.bat`` script.
 
+**``himawari-rx__sataid.bat``** is the script for ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) (It will start automatic by the ``himawari-rx__decode.bat`` script), then you can ``Register`` the ``SATAID Files`` to ``SATAID`` software. <br>
+Here is the download link of **``HimawariCast_software.zip``** (which **``SATAID``** is included in): [**https://www.data.jma.go.jp/mscweb/en/himawari89/himawari_cast/software/HimawariCast_software.zip**](https://www.data.jma.go.jp/mscweb/en/himawari89/himawari_cast/software/HimawariCast_software.zip). <br>
+**Note:** If you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html), just remove the script **``himawari-rx__sataid.bat``** from **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**), then this feature will be disabled.
+
 **``himawari-rx__rmdir.bat``** is the script for **remove ``the directories of hrit files``** after **all ``pictures`` are made** (functional like **``clear cache``**). <br>
 **Warnning: This script mustn't run directly, to avoid it remove current directory and its all files!** <br>
 **Note:** If you **don't want** to "**remove ``the directories of hrit files``** after **all ``pictures`` are made**", just remove the script **``himawari-rx__rmdir.bat``** from **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**), then this feature will be disabled.
