@@ -31,6 +31,14 @@ minutes_mod=0
 
 
 
+[ -f "$tmp_path/time_monitor_to_terminate_TSDuck.lock" ] && exit 0
+touch "$tmp_path/time_monitor_to_terminate_TSDuck.lock"
+
+
+
+
+
+
 echo "Time Monitor Started..."
 
 
@@ -65,12 +73,22 @@ sleep 10
 
 if [ -f "$tmp_path/exit_himawari_rx.txt" ]; then
 echo "Force exiting..."
+rm "$tmp_path/time_monitor_to_terminate_TSDuck.lock"
 exit 0
 fi
 
 
 
+
+
 done
+
+
+
+
+
+
+rm "$tmp_path/time_monitor_to_terminate_TSDuck.lock"
 
 
 

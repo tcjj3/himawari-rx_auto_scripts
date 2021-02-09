@@ -23,7 +23,22 @@ tmp_path="/tmp"
 
 
 
+[ -f "$tmp_path/terminate_TSDuck.lock" ] && exit 0
+touch "$tmp_path/terminate_TSDuck.lock"
+
+
+
+
+
+
 killall -9 tsp > /dev/null
+
+
+
+
+
+
+rm "$tmp_path/terminate_TSDuck.lock"
 
 
 
