@@ -168,7 +168,7 @@ done
 
 if [ -f "$BASEDIR/himawari-rx__rmdir.sh" ]; then
 $BASEDIR/himawari-rx__rmdir.sh "$DirPath" &
-[ ! -z "$DirPath" ] && rm -r "$DirPath"
+[ ! -z "$DirPath" ] && rm -r "$DirPath" > /dev/null &
 else
 touch "$DirPath/decoded.txt"
 fi

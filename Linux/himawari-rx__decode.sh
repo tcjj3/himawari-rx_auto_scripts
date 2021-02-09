@@ -201,7 +201,7 @@ fi
 if [ ! -f "$BASEDIR/himawari-rx__sataid.sh" ]; then
 if [ -f "$BASEDIR/himawari-rx__rmdir.sh" ]; then
 $BASEDIR/himawari-rx__rmdir.sh "$j" &
-[ ! -z "$j" ] && rm -r "$j"
+[ ! -z "$j" ] && rm -r "$j" > /dev/null &
 fi
 fi
 
