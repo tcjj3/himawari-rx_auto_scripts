@@ -52,6 +52,7 @@ if [ "$lasttime" != "$nowtime" ]; then
 if [ "$minutes_mod" == "5" ]; then
 echo "$nowtime: Execute \"killall -9 tsp\""
 killall -9 tsp > /dev/null
+lasttime="$nowtime"
 fi
 fi
 
