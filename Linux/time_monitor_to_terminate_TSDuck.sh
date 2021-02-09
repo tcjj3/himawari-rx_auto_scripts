@@ -43,7 +43,8 @@ while [ true ]; do
 
 
 #nowtime=`date "+%Y-%m-%d %H:%M:%S.%s"`
-nowtime=`date "+%Y-%m-%d %H:%M:%S"`
+#nowtime=`date "+%Y-%m-%d %H:%M:%S"`
+nowtime=`date "+%Y-%m-%d %H:%M"`
 minutes=`echo "$nowtime" | awk -F ':' '{print $2}'`
 
 minutes_mod=`expr $minutes % 10`
