@@ -63,7 +63,8 @@ The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in 
 **``start.sh``** is functionally like **``start.bat``** in [**Windows**](#for-windows) version.
 
 **Notice**: <br>
-These scripts will automatic **modify** the **decoder scripts** to **fix the bug of them** when **the path splitter is not for Linux** (if it's **for Windows only**).
+These scripts will automatic **modify** the **decoder scripts** to **fix the bug of them** when **the path splitter is not for Linux** (if it's **for Windows only**). <br>
+For exit these script, just create a file as **``/tmp/exit_himawari_rx.txt``** and terminate the **``tsp``** process, and don't forget to delete **``/tmp/exit_himawari_rx.txt``** if you want to start these automatic scripts again.
 
 **Usage**: <br>
 (1) Be sure the operating system is **``Linux``**, **``TSDuck``** and **``wine``** installed (if you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) automatic, **``wine``** is not requried), your hardwares is working and **``himawari-rx``** can work at the same machine. <br>
