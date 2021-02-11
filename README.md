@@ -10,6 +10,9 @@
 
 Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/himawari-rx).
 
+
+## For Windows
+
 **``himawari-rx__auto.bat``** is the main script for start ``TSDuck`` to record a dump file, then rename the dump file and start ``himawari-rx__decode.bat`` automatic when ``TSDuck`` is terminated, and start ``TSDuck`` again at the same time to record next round.
 
 **``himawari-rx__decode.bat``** is the script for start ``himawari-rx`` to receive files, and make pictures automatic. It will start automatic by the ``himawari-rx__auto.bat`` script.
@@ -31,7 +34,26 @@ The files of the ``hrit2sataid`` folder are extracted from [**``HimawariCast_sof
 
 **``start.vbs``** and **``start.bat``** are the **one-click script** of these scripts, you can using **``start.bat``** instead of ``start.vbs`` to get start if ``vbscript`` on your system is **not allowed**.
 
-Usage: <br>
+**Usage**: <br>
 (1) Be sure the operating system is **``Windows``**, **``TSDuck``** is installed, your hardwares is working and **``himawari-rx``** can work at the same computer. <br>
 (2) Then put these scripts to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
 (3) Finally just start **``start.vbs``** or **``start.bat (if vbscript on your system is not allowed)``**, it will automatic start ``himawari-rx__auto.bat`` and ``time_monitor_to_terminate_TSDuck.bat`` at the same time, they will start to receive and make pictures automatic.
+
+
+
+## For Linux
+
+**``himawari-rx__auto.sh``** is functional like **``himawari-rx__auto.bat``**.
+
+**``himawari-rx__decode.sh``** is functional like **``himawari-rx__decode.bat``**.
+
+**``himawari-rx__sataid.sh``** is functional like **``himawari-rx__sataid.bat``**.
+
+The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in **Windows** version.
+
+**``himawari-rx__rmdir.sh``** is functional like **``himawari-rx__rmdir.bat``**, and the remove commands is included in other scripts but not it.
+
+**``time_monitor_to_terminate_TSDuck.sh``** is functional like **``time_monitor_to_terminate_TSDuck.bat``**.
+
+**``start.sh``** is functional like **``start.bat``**.
+
