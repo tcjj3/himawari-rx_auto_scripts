@@ -11,6 +11,11 @@
 Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/himawari-rx).
 
 
+## System support
+There are two verions of systems supported: **Windows** and **Linux**. <br>
+The scripts for **Windows** are included in **Windows** folder, and for **Linux** are in **Linux** folder.
+
+
 ## For Windows
 
 **``himawari-rx__auto.bat``** is the main script for start ``TSDuck`` to record a dump file, then rename the dump file and start ``himawari-rx__decode.bat`` automatic when ``TSDuck`` is terminated, and start ``TSDuck`` again at the same time to record next round.
