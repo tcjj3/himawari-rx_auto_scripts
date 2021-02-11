@@ -57,3 +57,8 @@ The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in 
 
 **``start.sh``** is functional like **``start.bat``**.
 
+**Usage**: <br>
+(1) Be sure the operating system is **``Linux``**, **``TSDuck``** and **``wine``** installed (if you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) automatic, **``wine``** is not requried), your hardwares is working and **``himawari-rx``** can work at the same computer. <br>
+(2) Then put these scripts to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
+(3) Finally just start **``start.sh``**, it will automatic start ``himawari-rx__auto.sh`` and ``time_monitor_to_terminate_TSDuck.sh`` at the same time, they will start to receive and make pictures automatic.
+
