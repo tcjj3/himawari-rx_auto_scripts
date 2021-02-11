@@ -56,7 +56,7 @@ The files of the ``hrit2sataid`` folder are extracted from [**``HimawariCast_sof
 
 The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in **Windows** version.
 
-**``himawari-rx__rmdir.sh``** is functional like **``himawari-rx__rmdir.bat``**, and the remove commands is included in other scripts but not it (just for mark to **remove ``the directories of hrit files``**).
+**``himawari-rx__rmdir.sh``** is functional like **``himawari-rx__rmdir.bat``**, and the remove commands is included in other scripts but not this script (just for mark to **remove ``the directories of hrit files``**).
 
 **``time_monitor_to_terminate_TSDuck.sh``** is functional like **``time_monitor_to_terminate_TSDuck.bat``**.
 
