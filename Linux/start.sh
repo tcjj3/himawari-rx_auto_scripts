@@ -63,6 +63,17 @@ fi
 
 
 
+$BASEDIR/himawari-rx__auto.sh &
+
+
+
+
+
+
+
+
+
+
 # crontab doesn't work on some version of Linux,
 # so give up this way and replace with another way:
 #
