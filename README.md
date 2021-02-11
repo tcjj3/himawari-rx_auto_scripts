@@ -40,8 +40,8 @@ The files of the ``hrit2sataid`` folder are extracted from [**``HimawariCast_sof
 **``start.vbs``** and **``start.bat``** are the **one-click script** of these scripts, you can using **``start.bat``** instead of ``start.vbs`` to get start if ``vbscript`` on your system is **not allowed**.
 
 **Usage**: <br>
-(1) Be sure the operating system is **``Windows``**, **``TSDuck``** is installed, your hardwares is working and **``himawari-rx``** can work at the same computer. <br>
-(2) Then put the scripts of **Windows version** to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
+(1) Be sure the operating system is **``Windows``**, **``TSDuck``** is installed, your hardwares is working and **``himawari-rx``** can work at the same machine. <br>
+(2) Then put the scripts of [**Windows version**](https://github.com/tcjj3/himawari-rx_auto_scripts/tree/main/Windows) to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
 (3) Finally just start **``start.vbs``** or **``start.bat (if vbscript on your system is not allowed)``**, it will automatic start ``himawari-rx__auto.bat`` and ``time_monitor_to_terminate_TSDuck.bat`` at the same time, they will start to receive and make pictures automatic.
 
 
@@ -63,7 +63,7 @@ The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in 
 **``start.sh``** is functional like **``start.bat``**.
 
 **Usage**: <br>
-(1) Be sure the operating system is **``Linux``**, **``TSDuck``** and **``wine``** installed (if you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) automatic, **``wine``** is not requried), your hardwares is working and **``himawari-rx``** can work at the same computer. <br>
-(2) Then put the scripts of **Linux version** to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
+(1) Be sure the operating system is **``Linux``**, **``TSDuck``** and **``wine``** installed (if you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) automatic, **``wine``** is not requried), your hardwares is working and **``himawari-rx``** can work at the same machine. <br>
+(2) Then put the scripts of [**Linux version**](https://github.com/tcjj3/himawari-rx_auto_scripts/tree/main/Linux) to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
 (3) Finally just start **``start.sh``**, it will automatic start ``himawari-rx__auto.sh`` and ``time_monitor_to_terminate_TSDuck.sh`` at the same time, they will start to receive and make pictures automatic.
 
