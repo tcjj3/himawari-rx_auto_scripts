@@ -48,19 +48,19 @@ The files of the ``hrit2sataid`` folder are extracted from [**``HimawariCast_sof
 
 ## For Linux
 
-**``himawari-rx__auto.sh``** is functional like **``himawari-rx__auto.bat``**.
+**``himawari-rx__auto.sh``** is functionally like **``himawari-rx__auto.bat``** in [**Windows**](#for-windows) version.
 
-**``himawari-rx__decode.sh``** is functional like **``himawari-rx__decode.bat``**.
+**``himawari-rx__decode.sh``** is functionally like **``himawari-rx__decode.bat``** in [**Windows**](#for-windows) version.
 
-**``himawari-rx__sataid.sh``** is functional like **``himawari-rx__sataid.bat``**.
+**``himawari-rx__sataid.sh``** is functionally like **``himawari-rx__sataid.bat``** in [**Windows**](#for-windows) version.
 
-The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in **Windows** version.
+The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in [**Windows**](#for-windows) version.
 
-**``himawari-rx__rmdir.sh``** is functional like **``himawari-rx__rmdir.bat``**, and the remove commands is included in other scripts but not this script (just for mark to **remove ``the directories of hrit files``**).
+**``himawari-rx__rmdir.sh``** is functionally like **``himawari-rx__rmdir.bat``** in [**Windows**](#for-windows) version, but the remove commands is included in other scripts and not this script (just for mark to **remove ``the directories of hrit files``**).
 
-**``time_monitor_to_terminate_TSDuck.sh``** is functional like **``time_monitor_to_terminate_TSDuck.bat``**.
+**``time_monitor_to_terminate_TSDuck.sh``** is functionally like **``time_monitor_to_terminate_TSDuck.bat``** in [**Windows**](#for-windows) version.
 
-**``start.sh``** is functional like **``start.bat``**.
+**``start.sh``** is functionally like **``start.bat``** in [**Windows**](#for-windows) version.
 
 **Usage**: <br>
 (1) Be sure the operating system is **``Linux``**, **``TSDuck``** and **``wine``** installed (if you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) automatic, **``wine``** is not requried), your hardwares is working and **``himawari-rx``** can work at the same machine. <br>
