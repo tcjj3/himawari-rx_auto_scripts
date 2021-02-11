@@ -12,8 +12,8 @@ Automatic scripts for [**sam210723/himawari-rx**](https://github.com/sam210723/h
 
 
 ## System support
-There are two verions of systems supported: **Windows** and **Linux**. <br>
-The scripts for **Windows** are included in **Windows** folder, and for **Linux** are in **Linux** folder.
+There are two verions of systems supported: [**Windows**](#for-windows) and [**Linux**](#for-linux). <br>
+The scripts for [**Windows**](#for-windows) are included in [**Windows**](https://github.com/tcjj3/himawari-rx_auto_scripts/tree/main/Windows) folder, and for [**Linux**](#for-linux) are in [**Linux**](https://github.com/tcjj3/himawari-rx_auto_scripts/tree/main/Linux) folder.
 
 
 ## For Windows
