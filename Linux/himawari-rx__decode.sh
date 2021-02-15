@@ -216,11 +216,12 @@ done
 
 
 elif [ -f "$i" ]; then
-ext=`echo "$i" | awk -F '.' '{print $NF}'`
-if [ "$ext" == "tar" ]; then
+file_ext=`echo "$i" | awk -F '.' '{print $NF}'`
+if [ "$file_ext" == "tar" ]; then
 mv "$i" "$BASEDIR/received/tar/$i" > /dev/null
 else
 mv "$i" "$BASEDIR/received/others/$i" > /dev/null
+fi
 fi
 done
 
