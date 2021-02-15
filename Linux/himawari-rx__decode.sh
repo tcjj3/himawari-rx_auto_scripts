@@ -68,6 +68,9 @@ python3 himawari-rx.py --config himawari-rx.ini --file "$tmp_path/udp_fordecode.
 
 
 
+mkdir "$BASEDIR/received/tar" > /dev/null
+mkdir "$BASEDIR/received/others" > /dev/null
+
 #for i in ./received/*; do
 for i in $BASEDIR/received/*; do
 if [ -d "$i" ]; then
@@ -210,6 +213,14 @@ fi
 fi
 done
 
+
+
+elif [ -f "$i" ]; then
+ext=`echo "$i" | awk -F '.' '{print $NF}'`
+if [ "$ext" == "tar" ]; then
+mv "$i" "$BASEDIR/received/tar/$i" > /dev/null
+else
+mv "$i" "$BASEDIR/received/others/$i" > /dev/null
 fi
 done
 
