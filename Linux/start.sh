@@ -63,7 +63,7 @@ fi
 
 
 
-$BASEDIR/himawari-rx__auto.sh &
+nohup $BASEDIR/himawari-rx__auto.sh &
 
 
 
@@ -89,7 +89,7 @@ $BASEDIR/himawari-rx__auto.sh &
 
 
 
-$BASEDIR/time_monitor_to_terminate_TSDuck.sh &
+nohup $BASEDIR/time_monitor_to_terminate_TSDuck.sh &
 
 
 
