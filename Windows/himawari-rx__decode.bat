@@ -25,6 +25,9 @@ python himawari-rx.py --config himawari-rx.ini --file "..\scripts\udp_fordecode.
 
 
 
+mkdir received\tar >nul
+mkdir received\others >nul
+
 for /d %%i in (received\*) do (
 
 mkdir %%i\IMG_DK01B04 >nul
@@ -131,6 +134,16 @@ start himawari-rx__rmdir.bat %%i\%%j
 
 )
 
+)
+
+
+
+for /f "delims=" %%i in ('dir /b received\*.tar') do (
+echo "move received\%%i received\tar\%%i >nul"
+)
+
+for /f "delims=" %%i in ('dir /b received\*') do (
+echo "move received\%%i received\others\%%i >nul"
 )
 
 
