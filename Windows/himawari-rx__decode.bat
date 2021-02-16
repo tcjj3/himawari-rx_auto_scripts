@@ -138,12 +138,12 @@ start himawari-rx__rmdir.bat %%i\%%j
 
 
 
-for /f "delims=" %%i in ('dir /b received\*.tar') do (
-echo "move received\%%i received\tar\%%i >nul"
+for /f "delims=" %%i in ('dir /a-d /b received\*.tar') do (
+move received\%%i received\tar\%%i >nul
 )
 
-for /f "delims=" %%i in ('dir /b received\*') do (
-echo "move received\%%i received\others\%%i >nul"
+for /f "delims=" %%i in ('dir /a-d /b received\*') do (
+move received\%%i received\others\%%i >nul
 )
 
 
