@@ -80,15 +80,15 @@ while [ $isSuccess == 0 ]; do
 
 # For TBS5520SE Device [ adapter 0 frontend 1, is for DVB-S2 ]:
 if [ -d /dev/dvb/adapter0 ]; then
-if [ -d /dev/dvb/adapter0/dvr0 ] && [ ! -d /dev/dvb/adapter0/dvr1 ]; then
+if [ -c /dev/dvb/adapter0/dvr0 ] && [ ! -c /dev/dvb/adapter0/dvr1 ]; then
 ln -s dvr0 /dev/dvb/adapter0/dvr1
 fi
 
-if [ -d /dev/dvb/adapter0/demux0 ] && [ ! -d /dev/dvb/adapter0/demux1 ]; then
+if [ -c /dev/dvb/adapter0/demux0 ] && [ ! -c /dev/dvb/adapter0/demux1 ]; then
 ln -s demux0 /dev/dvb/adapter0/demux1
 fi
 
-if [ -d /dev/dvb/adapter0/net0 ] && [ ! -d /dev/dvb/adapter0/net1 ]; then
+if [ -c /dev/dvb/adapter0/net0 ] && [ ! -c /dev/dvb/adapter0/net1 ]; then
 ln -s net0 /dev/dvb/adapter0/net1
 fi
 fi
