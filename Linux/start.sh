@@ -63,7 +63,10 @@ fi
 
 
 
-nohup $BASEDIR/himawari-rx__auto.sh &
+device="$1"
+
+
+nohup $BASEDIR/himawari-rx__auto.sh "$device" &
 
 
 

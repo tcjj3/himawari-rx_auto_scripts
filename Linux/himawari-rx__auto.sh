@@ -75,9 +75,6 @@ while [ $isSuccess == 0 ]; do
 
 
 
-#tsp -I dvb --adapter 0 --delivery-system "DVB-S2" --lnb "5150000000" --frequency 4148000000 --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "$tmp_path/udp.dump" -O drop
-
-
 # For TBS5520SE Device [ adapter 0 frontend 1, is for DVB-S2 ]:
 if [ -d /dev/dvb/adapter0 ]; then
 if [ -c /dev/dvb/adapter0/dvr0 ] && [ ! -c /dev/dvb/adapter0/dvr1 ]; then
@@ -93,7 +90,32 @@ ln -s net0 /dev/dvb/adapter0/net1
 fi
 fi
 
+
+
+
+
+
+device="$1"
+
+
+#tsp -I dvb --adapter 0 --delivery-system "DVB-S2" --lnb "5150000000" --frequency 4148000000 --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "$tmp_path/udp.dump" -O drop
+
+
+if [ ! -z "$device" ]; then
+
+tsp -I dvb -d "$device" --delivery-system "DVB-S2" --lnb "1002" --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "$tmp_path/udp.dump" -O drop
+
+else
+
+tsp -I dvb --adapter 0 --delivery-system "DVB-S2" --lnb "1002" --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "$tmp_path/udp.dump" -O drop
+
+
+if [ ! -s "$tmp_path/udp.dump" ]; then
+# For TBS5520SE Device [ adapter 0 frontend 1, is for DVB-S2 ]:
 tsp -I dvb -d /dev/dvb/adapter0:1 --delivery-system "DVB-S2" --lnb "1002" --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "$tmp_path/udp.dump" -O drop
+fi
+
+fi
 
 
 
