@@ -23,8 +23,8 @@ set size=0
 for /r %%x in (..\scripts\udp.dump) do set /a size+=%%~zx
 if %size%==0 (
 REM * Error: dvb: deliver system DVB-S2 not supported on tuner Mirics BDA Filter
-echo Receiver has error, would retry after 5 seconds...
-choice /t 5 /d y /n >nul
+echo Receiver has error, would retry after 1 seconds...
+choice /t 1 /d y /n >nul
 goto receive
 ) else (
 echo Receive success, now start to decoding...
