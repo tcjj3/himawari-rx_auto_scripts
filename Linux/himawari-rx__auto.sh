@@ -130,8 +130,8 @@ isSuccess=1
 echo "Receive success, now start to decoding..."
 else
 # * Error: dvb: deliver system DVB-S2 not supported on tuner Mirics BDA Filter
-echo "Receiver has error, would retry after 5 seconds..."
-sleep 5
+echo "Receiver has error, would retry after 1 seconds..."
+sleep 1
 fi
 
 if [ -f "$tmp_path/exit_himawari_rx.txt" ]; then
