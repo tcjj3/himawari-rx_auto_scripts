@@ -20,7 +20,16 @@ echo '-----------------------------------------------------------'
 
 
 
-start himawari-rx__auto.bat
+
+set device=%1
+
+if defined device (
+start /D "%~dp0%" %" himawari-rx__auto.bat %device%
+) else (
+start /D "%~dp0%" %" himawari-rx__auto.bat
+)
+
+
 
 start time_monitor_to_terminate_TSDuck.bat
 

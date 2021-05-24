@@ -16,7 +16,26 @@ echo '-----------------------------------------------------------'
 
 
 :receive
+
+
+
+set device=%1
+
+if defined device (
+
+tsp -I dvb --adapter %device% --delivery-system "DVB-S2" --lnb "5150000000" --frequency 4148000000 --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "..\scripts\udp.dump" -O drop
+
+) else (
+
 tsp -I dvb --adapter 0 --delivery-system "DVB-S2" --lnb "5150000000" --frequency 4148000000 --modulation QPSK --symbol-rate 2586148 --fec-inner "3/5" --roll-off 0.2 --polarity "horizontal" -P mpe --pid 0x03E9 --log --output-file "..\scripts\udp.dump" -O drop
+
+)
+
+
+
+
+
+
 
 REM if %errorlevel%==1 (
 set size=0
