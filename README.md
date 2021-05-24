@@ -50,7 +50,7 @@ The files of the ``hrit2sataid`` folder are extracted from [**``HimawariCast_sof
 
 **``himawari-rx__auto.sh``** is functionally like **``himawari-rx__auto.bat``** in [**Windows**](#for-windows) version.
 <br>
-If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatic), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
+If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatically), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
 ```
   -d name
   --device-name name
@@ -76,7 +76,7 @@ The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in 
 
 **``start.sh``** is functionally like **``start.bat``** in [**Windows**](#for-windows) version.
 <br>
-If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatic), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
+If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatically), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
 ```
   -d name
   --device-name name
@@ -103,7 +103,7 @@ For exit these script, just create a file as **``/tmp/exit_himawari_rx.txt``** a
 (3) Finally just start **``start.sh``**, it will automatic start ``himawari-rx__auto.sh`` and ``time_monitor_to_terminate_TSDuck.sh`` at the same time, they will start to receive and make pictures automatic.
 <br>
 <br>
-If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatic), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
+If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatically), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
 ```
   -d name
   --device-name name
