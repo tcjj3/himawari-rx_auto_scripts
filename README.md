@@ -49,6 +49,19 @@ The files of the ``hrit2sataid`` folder are extracted from [**``HimawariCast_sof
 ## For Linux
 
 **``himawari-rx__auto.sh``** is functionally like **``himawari-rx__auto.bat``** in [**Windows**](#for-windows) version.
+If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatic), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
+```
+  -d name
+  --device-name name
+      Specify the DVB receiver device name, /dev/dvb/adapterA[:F[:M[:V]]] where
+      A = adapter number, F = frontend number (default: 0), M = demux number
+      (default: 0), V = dvr number (default: 0). By default, the first receiver
+      device is used. Use the tslsdvb utility to list all DVB devices.
+```
+For example (for TBS5520SE Device [ adapter 0 frontend 1, is for DVB-S2 ]):
+```
+himawari-rx__auto.sh "/dev/dvb/adapter0:1"
+```
 
 **``himawari-rx__decode.sh``** is functionally like **``himawari-rx__decode.bat``** in [**Windows**](#for-windows) version.
 
@@ -61,6 +74,19 @@ The **``hrit2sataid``** folder is the same as the **``hrit2sataid``** folder in 
 **``time_monitor_to_terminate_TSDuck.sh``** is functionally like **``time_monitor_to_terminate_TSDuck.bat``** in [**Windows**](#for-windows) version.
 
 **``start.sh``** is functionally like **``start.bat``** in [**Windows**](#for-windows) version.
+If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatic), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
+```
+  -d name
+  --device-name name
+      Specify the DVB receiver device name, /dev/dvb/adapterA[:F[:M[:V]]] where
+      A = adapter number, F = frontend number (default: 0), M = demux number
+      (default: 0), V = dvr number (default: 0). By default, the first receiver
+      device is used. Use the tslsdvb utility to list all DVB devices.
+```
+For example (for TBS5520SE Device [ adapter 0 frontend 1, is for DVB-S2 ]):
+```
+start.sh "/dev/dvb/adapter0:1"
+```
 
 **Notice**: <br>
 These scripts will automatic **modify** the **decoder scripts** to **fix the bug of them** when **the path splitter is not for Linux** (if it's **for Windows only**). <br>
@@ -70,4 +96,18 @@ For exit these script, just create a file as **``/tmp/exit_himawari_rx.txt``** a
 (1) Be sure the operating system is **``Linux``**, **``TSDuck``** and **``wine``** installed (if you **don't want** to ``convert`` all received [**``HRIT Data (HRIT File Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_hrit.html) to [**``SATAID Data (SATAID Format)``**](https://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/sample_sataid.html) automatic, **``wine``** is not requried), your hardwares is working and **``himawari-rx``** can work at the same machine. <br>
 (2) Then put the scripts of [**Linux version**](Linux) to **``himawari-rx``**'s directory (at the same directory as **``himawari-rx.py``**). <br>
 (3) Finally just start **``start.sh``**, it will automatic start ``himawari-rx__auto.sh`` and ``time_monitor_to_terminate_TSDuck.sh`` at the same time, they will start to receive and make pictures automatic.
+
+If you want to choose device or frontend, just add argument 1 named "`device`" (if it is empty, the script will use `adapter0` and use the `frontend` automatic), it is like "`-d name`" or "`--device-name name`" for `TSDuck`. (Use `tsp -I dvb --help` command for help)
+```
+  -d name
+  --device-name name
+      Specify the DVB receiver device name, /dev/dvb/adapterA[:F[:M[:V]]] where
+      A = adapter number, F = frontend number (default: 0), M = demux number
+      (default: 0), V = dvr number (default: 0). By default, the first receiver
+      device is used. Use the tslsdvb utility to list all DVB devices.
+```
+For example (for TBS5520SE Device [ adapter 0 frontend 1, is for DVB-S2 ]):
+```
+start.sh "/dev/dvb/adapter0:1"
+```
 
