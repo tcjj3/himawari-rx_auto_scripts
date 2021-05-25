@@ -13,6 +13,7 @@ echo "'-----------------------------------------------------------'"
 
 
 BASEDIR=$(dirname $0)
+cd $BASEDIR
 
 
 tmp_path="/tmp"
@@ -218,9 +219,9 @@ done
 elif [ -f "$i" ]; then
 file_ext=`echo "$i" | awk -F '.' '{print $NF}'`
 if [ "$file_ext" == "tar" ]; then
-mv "$i" "$BASEDIR/received/tar/$i" > /dev/null
+mv "$i" "$BASEDIR/received/tar/" > /dev/null
 else
-mv "$i" "$BASEDIR/received/others/$i" > /dev/null
+mv "$i" "$BASEDIR/received/others/" > /dev/null
 fi
 fi
 done
