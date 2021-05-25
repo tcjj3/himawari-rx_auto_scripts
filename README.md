@@ -62,6 +62,7 @@ For example (for `adapter 1`):
 ```
 start.bat 1
 ```
+<br>
 
 **Usage**: <br>
 (1) Be sure the operating system is **``Windows``**, **``TSDuck``** is installed, your hardwares is working and **``himawari-rx``** can work at the same machine. <br>
@@ -80,6 +81,7 @@ For example (for `adapter 1`):
 ```
 start.bat 1
 ```
+<br>
 
 
 
