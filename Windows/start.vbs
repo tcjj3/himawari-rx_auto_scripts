@@ -74,6 +74,24 @@ set oShell	= CreateObject("WScript.Shell")
 
 
 
+
+
+
+oShell.CurrentDirectory = ThisDirPath
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 'sCommand = "cmd /c " & ThisDirPath & "\" & "himawari-rx__auto.bat"
 'If Not Device = "" Then
 'sCommand = sCommand & " " & Device
@@ -103,12 +121,16 @@ oShell.Run sCommand, 1, False
 
 
 
+
+
 'sCommand = "cmd /c time_monitor_to_terminate_TSDuck.bat"
 
 sCommand = "cmd /c " & Chr (34) & ThisDirPath & "\" & "time_monitor_to_terminate_TSDuck.bat" & Chr (34)
 
 
 oShell.Run sCommand, 1, False
+
+
 
 
 
