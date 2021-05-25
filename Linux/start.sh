@@ -64,6 +64,20 @@ fi
 
 
 
+if [ ! -L nohup.out ]; then
+rm -rf nohup.out > /dev/null 2>&1
+ln -s /dev/null nohup.out > /dev/null 2>&1
+fi
+
+
+
+
+
+
+
+
+
+
 device="$1"
 
 
