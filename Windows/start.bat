@@ -21,6 +21,8 @@ echo '-----------------------------------------------------------'
 
 
 
+
+
 set device=%1
 
 if defined device (
@@ -31,13 +33,21 @@ start /D "%~dp0%" %" himawari-rx__auto.bat
 
 
 
-start time_monitor_to_terminate_TSDuck.bat
+
+
+
+
+start /D "%~dp0%" %" time_monitor_to_terminate_TSDuck.bat
+
+
 
 
 
 
 
 exit
+
+
 
 
 
